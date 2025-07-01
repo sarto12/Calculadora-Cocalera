@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Valores Gastos-Venta</title>
+    <link rel="stylesheet" href="../CSS/estilo_Gestion_de_regiones.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="paguina_registro.html">Registro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="paso_elaboracion.html">Paso de Elaboración</a></li>
+            <li><a href="tratamientos_medicinales.html">Tratamientos Medicinales</a></li>
+            <li><a href="productos_legales.html">Productos Derivados</a></li>
+            <li><a href="datos_recolectados.html">Datos Recolectados</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="editar_datos.html">Editar Datos</a></li>
+            <li><a href="Biesimci.html">Biesimci</a></li>
+        </ul>
+    </nav>
+    <div class="container" style="align-items: flex-start;">
+        <div class="left" style="flex:1; align-items: flex-start;">
+            <h1 style="font-size: 48px; font-weight: bold; margin-bottom: 30px;">Gestión Valores<br>Gastos-Venta</h1>
+            <img src="../images/valores.png" alt="Mapa de Colombia" style="width: 350px; margin-top: 20px;">
+        </div>
+        <div class="right" style="flex:2; align-items: flex-start;">
+            <form style="display: flex; flex-wrap: wrap; gap: 40px;">
+                <div style="display: flex; flex-direction: column; gap: 20px; min-width: 300px;">
+                    <label>REGIÓN
+                        <select><option>Seleccionar</option></select>
+                    </label>
+                    <label>DEPARTAMENTO
+                        <select><option>Seleccionar</option></select>
+                    </label>
+                    <label>MUNICIPIO
+                        <select><option>Seleccionar</option></select>
+                    </label>
+                    <label>PUEBLO
+                        <select><option>Seleccionar</option></select>
+                    </label>
+                    <label>VEREDA
+                        <select><option>Seleccionar</option></select>
+                    </label>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 20px; min-width: 300px;">
+                    <label>ENCLAVE PRODUCTO
+                        <select><option>Seleccionar</option></select>
+                    </label>
+                    <label>AÑO
+                        <input type="number" placeholder="Ingresar valor" />
+                    </label>
+                    <label>VALOR INSUMOS CULTIVO
+                        <input type="number" placeholder="Ingresar valor" />
+                    </label>
+                    <label>VALOR INSUMOS PROCESAMIENTO
+                        <input type="number" placeholder="Ingresar valor" />
+                    </label>
+                    <label>VALOR DE VENTA 
+                        <input type="number" placeholder="Ingresar valor" />
+                    </label>
+                </div>
+            </form>
+            <button style="margin-top: 30px; background: #4CAF50; color: #fff; border: none; padding: 14px 32px; font-size: 18px; font-weight: bold; border-radius: 4px; cursor: pointer;">GUARDAR CAMBIOS</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Recolección</title>
+    <link rel="stylesheet" href="../CSS/estilo_datos_recolectados.css">
+</head>
+<body>
+  
+    <header class="header">
+        <div class="header-left">
+
+        </div>
+        <div class="header-right">
+            <ul class="header-links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="paguina_registro.html">Registro</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="paso_elaboracion.html">Paso de Elaboración</a></li>
+                <li><a href="tratamientos_medicinales.html">Tratamientos Medicinales</a></li>
+                <li><a href="productos_legales.html">Productos Derivados</a></li>
+                <li><a href="datos_recolectados.html">Datos Recolectados</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="editar_datos.html">Editar Datos</a></li>
+                <li><a href="Biesimci.html">Biesimci</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <h1>Datos de Recolección</h1>
+        <section class="author-section">
+            <h2>Autor</h2>
+            <p><strong>Jesús Emanuel Díaz Arcila</strong></p>
+            <p>Historiador</p>
+            <p>Universidad Nacional de Colombia</p>
+            <p>Email: <a href="mailto:jeediazar@unal.edu.co">jeediazar@unal.edu.co</a></p>
+        </section>
+
+        <section class="technical-sheet">
+            <h2>Ficha Técnica</h2>
+            <p><strong>“Ingresos de la Unidad Productora Agrícola con Coca a partir de Costos y Precios Unitarios”</strong></p>
+            <p>Se compone de dos segmentos:</p>
+            <div class="segment">
+                <h3>1.1. Caracterización y Proceso Productivo</h3>
+                <p>El primer segmento describe el proceso de cultivo y procesamiento de la hoja de coca y sus derivados.</p>
+                <button class="toggle-btn" onclick="toggleContent('segment1')">Ver más</button>
+                <div id="segment1" class="hidden-content">
+                    <p>
+                        El primero es la caracterización de la producción de la hoja de coca y los derivados Pasta Base de Coca (PBC) y Base de Coca, donde se describe cada paso del proceso del cultivo de coca y el procesamiento posterior de la hoja y los insumos necesarios en cada uno de estos pasos. Esta caracterización se llevó a cabo a partir de una investigación que abarcó diversas fuentes como artículos, informes, blogs y páginas web, pero debido al carácter ilegal de la actividad a investigar no se encontraba una descripción detallada de cada uno de los pasos ni del proceso en general, por lo que la colaboración de campesinos cocaleros en esta tarea fue fundamental. Se cruzó la información de todas las fuentes para llegar a una descripción precisa y sustentada, que se dividió en dos etapas:
+                    </p>
+                    <h4>a) Proceso de Cultivo</h4>
+                    <ul>
+                        <li><strong>Deshierbar:</strong> Retirar maleza y plantas presentes en la zona a cultivar. La mano de obra calculada en jornales es el gasto derivado de este paso.</li>
+                        <li><strong>Plantar semillas:</strong> Obtener semillas de coca y plantarlas en el terreno. La obtención de semillas y el jornal de quienes las cultivan son los gastos derivados de este paso. Estos dos primeros pasos no son incluidos en la herramienta de cálculo ya que sólo se realizan una única vez por cultivo y los cocaleros entrevistados comentan que las semillas las adquieren gratis en las zonas de gran producción y el trabajo de preparación del lote es autónomo por parte del dueño del predio.</li>
+                        <li><strong>Abonar:</strong> Usar fertilizante para acelerar el proceso de maduración de la planta de coca. Se realiza 2 veces por corte y los gastos son los jornales y el fertilizante.</li>
+                        <li><strong>Fumigar:</strong> Se aplica veneno para matar o prevenir plagas de insectos. Se realiza 2 veces por corte y los insumos son los jornales y el pesticida.</li>
+                        <li><strong>Regar:</strong> Aplicar agua al cultivo. Los cultivadores informan que no se utilizan sistemas de riego que conlleven gasto alguno, y que el agua es obtenida de fuentes cercanas o gracias a la lluvia.</li>
+                        <li><strong>Raspar:</strong> Proceso donde se retiran las hojas de las ramas para su recolección y posterior procesamiento. Se paga a los jornaleros por kilogramo de hoja recogido.</li>
+                        <li><strong>Matamaleza:</strong> Se aplica veneno matamaleza cuando la planta de coca está sin hojas para no afectarlas, con el fin de eliminar las plantas no productivas que crecen alrededor y le restan nutrientes al cultivo. También se puede realizar este proceso de deshierbe a mano como se describió en el primer paso. Los insumos serían la mano de obra y el veneno si se aplica en vez de “machetear”.</li>
+                    </ul>
+                    <h4>b) Procesamiento de la Hoja</h4>
+                    <ul>
+                        <li><strong>Molienda:</strong> Se tritura la hoja hasta reducirla lo máximo posible. Este proceso se realiza principalmente con una trituradora industrial o con guadaña.</li>
+                        <li><strong>Maceración:</strong> Es un proceso que consiste en agregar un producto que ayude a romper las paredes vegetales para posteriormente separar el alcaloide. Este producto puede ser carbonato liviano, cal y sal o incluso algunos utilizan cemento. Estos dos primeros pasos son conocidos como el salado de la hoja.</li>
+                        <li><strong>Calentamiento:</strong> Se envuelve en plástico para aumentar temperatura por al menos 1 hora.</li>
+                        <li><strong>Extracción sólido-líquido:</strong> Se mezcla la hoja picada y salada en disolvente (combustible) para separar el alcaloide y se mezcla por al menos 2 horas. Se utiliza principalmente gasolina, pero en algunos casos se reporta el uso de queroseno.</li>
+                        <li><strong>Filtración:</strong> Se filtra la mezcla, usualmente a través de algún tipo de tela, y se desecha la hoja, ya que el alcaloide queda en el disolvente.</li>
+                        <li><strong>Extracción líquido-líquido:</strong> Se agrega ácido sulfúrico diluido en agua para separar la fase acuosa de la orgánica y poder retirar la fase orgánica que comprende el combustible. Se mezcla alrededor de 10 minutos y se deja reposar hasta que la fase acuosa y orgánica se separen por la diferencia de densidad. Posteriormente por medio de una manguera se sustrae la fase acuosa ya que, al ser más pesada, queda en el fondo.</li>
+                        <li><strong>Oxidación y filtración:</strong> Todavía permanecen muchas impurezas de sales, ácidos y combustible que se han adquirido en el proceso y estos son removidos añadiendo y mezclando paulatinamente permanganato de potasio para su oxidación, hasta que la gota se vea lo más cristalina posible y las impurezas se solidifiquen y se puedan filtrar.</li>
+                        <li><strong>Precipitación, Filtración y Secado:</strong> Se va neutralizando la acidez de la disolución con una sustancia alcalina (amoniaco o soda cáustica) disuelta en agua y se bate paulatinamente hasta que la disolución se torna blanquecina. Finalmente se filtra y se escurre para eliminar el líquido y se obtiene la Base.</li>
+                    </ul>
+                    <p>
+                        Los gastos e insumos requeridos en el cultivo fueron calculados por hectárea, mientras que la Pasta y la Base se calcularon por cantidad requerida del insumo por kilogramo producido. En el caso de la PBC no se suman los valores del Permanganato del Potasio y el Amoniaco.
+                    </p>
+                </div>
+            </div>
+            <div class="segment">
+                <h3>1.2. Sistematización de Informes e Investigación</h3>
+                <p>El segundo segmento se basa en los reportes anuales de Cultivos Ilícitos de la UNODC.</p>
+                <button class="toggle-btn" onclick="toggleContent('segment2')">Ver más</button>
+                <div id="segment2" class="hidden-content">
+                    <p>
+                        El segundo segmento de la herramienta es la calculadora, la cual se diseñó con base en los reportes anuales de Cultivos ilícitos de la UNODC. Dichos reportes se vienen publicando desde el año 2002, principalmente como un censo de estos cultivos, pero a partir del año 2005 se implementó una caracterización de los precios de la coca y sus derivados. En el informe del año 2005 se hace por primera vez la diferenciación entre Pasta Base de Coca y Base de Coca, indicando que la principal diferenciación radica en la no utilización de Permanganato de Potasio y Amonio en la PBC, por lo que su porcentaje de pureza es inferior al de la Base y también más económica de producir. Esto nos ayudó al correcto cálculo de los gastos en cada caso y al diseño de la calculadora que está compuesta de la siguiente manera:
+                    </p>
+                    <ul>
+                        <li><strong>a) Año:</strong> Se presenta del año 2005 al 2021.</li>
+                        <li><strong>b) Región:</strong> Los primeros informes se dividían en 7 diferentes regiones según la concentración de cultivos en el territorio colombiano: Sur de Bolívar, Sierra Nevada, Meta-Guaviare, Putumayo Caquetá, Orinoquía, Catatumbo y Pacífico. Posteriormente, hacia el año 2007 se incluyó la región Amazonía. En la herramienta cada año contiene todas estas regiones.</li>
+                        <li><strong>c) Número de hectáreas:</strong> Este dato será proporcionado por el solicitante, junto con el año del desplazamiento o despojo y la región donde se encuentra el predio para calcular las ganancias que obtenía.</li>
+                        <li><strong>d) Cosechas Anuales:</strong> El número de cosechas anuales varía dependiendo del tipo de planta y condiciones climáticas de la región y productivas de la tierra en cuestión. El valor se informa en todos los informes.</li>
+                        <li><strong>e) Rendimiento Promedio:</strong> Se divide en tres columnas:
+                            <ul>
+                                <li><strong>Hoja:</strong> Calculado en número de kilogramos de hoja obtenidos por cada hectárea cultivada, aparecía en algunos casos en estas unidades, pero otras veces se mostraba el rendimiento anual, por lo que en dichos casos se tomó ese valor y se dividió por las cosechas anuales para tener el valor en las unidades requeridas.</li>
+                                <li><strong>Pasta:</strong> Calculado en número de kilogramos obtenidos por cada tonelada métrica de hoja procesada, este dato aparece en la mayoría de los informes, y en los años que no aparecía se calculaba a partir de los datos de los años más cercanos y teniendo en cuenta el informe de la fluctuación de los precios.</li>
+                                <li><strong>Base:</strong> Calculado en número de kilogramos obtenidos por cada tonelada métrica de hoja procesada, se utilizó la misma metodología que con la Pasta.</li>
+                            </ul>
+                        </li>
+                        <li><strong>f) Valor promedio:</strong> Se divide en tres columnas: Hoja, Pasta y Base. Los tres productos se presentan en valor en COP$ por kilogramo. Cuando el dato no era proporcionado en los informes se calculaba a partir de las fluctuaciones de precios informados en el informe y los valores de los años más cercanos (año anterior y año siguiente).</li>
+                        <li><strong>g) Gastos Promedio:</strong> Se divide en tres columnas: Hoja, Pasta y Base. Con base en la investigación y caracterización de los gastos e insumos que se presentan en el primer segmento de la herramienta, se calcularon los gastos en que se incurre para el cultivo y procesamiento de coca para el año 2021 y se propone realizar una proyección inversa estadística para poder calcular los años anteriores.</li>
+                        <li><strong>h) Ganancias Anuales Promedio:</strong> Se divide en tres columnas: Hoja, Pasta y Base. Aquí se hallará el resultado de la multiplicación del número de hectáreas informadas por el solicitante por los valores de las secciones e), f) y g), para conocer las ganancias derivadas de los cultivos de coca.</li>
+                    </ul>
+                    <p>
+                        En la parte inferior de la calculadora se incluyó un glosario con la descripción de la obtención de cada dato cuando fue necesario trabajarlo antes de incluirlo, y/o la descripción de particularidades que se presentaban en cada informe, para dar claridad de todos los detalles de su desarrollo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bibliography">
+            <h2>Bibliografía</h2>
+            <button class="toggle-btn" onclick="toggleContent('bibliography-content')">Ver Bibliografía</button>
+            <div id="bibliography-content" class="hidden-content">
+                <ul>
+                    <li>Estudios para el Desarrollo y la Paz (Indepaz). (2023). Economía de los conflictos armados en Colombia: Acercamiento a la cadena de valor del narcotráfico. Bogotá: Punto de Encuentro - Embajada de Canadá.</li>
+                    <li>Estupinya, P. (14 de 08 de 2010). Prácticas de química: De la hoja de coca a la cocaína. Obtenido de Blogs Sociedad: <a href="https://blogs.elpais.com/apuntes-cientificos-mit/2010/08/prácticas-de-química-de-la-hoja-de-coca-a-la-cocaína.html" target="_blank">https://blogs.elpais.com/apuntes-cientificos-mit/2010/08/prácticas-de-química-de-la-hoja-de-coca-a-la-cocaína.html</a></li>
+                    <li>Oficina de las Naciones Unidas contra la Droga y el Delito (UNODC). (2019). Informe de medición de las economías ilícitas. Apartado Cualitativo. Bogotá: Minjusticia.</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2003). Colombia - Censo de coca en Diciembre de 2002 & Estimado inter-censal en Julio de 2003. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos en Colombia (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2004). Colombia - Censo de Cultivos de Coca en Diciembre de 2003. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2005). Colombia - Censo de Cultivos de Coca. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2006). Colombia - Monitoreo de Cultivos de Coca. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2007). Colombia - Monitoreo de Cultivos de Coca. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2008). Colombia - Monitoreo de Cultivos de Coca. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2009). Colombia - Monitoreo de Cultivos de Coca. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2010). Colombia - Monitoreo de Cultivos de Coca 2009. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2012). Colombia - Censo de Cultivos de Coca 2011. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2013). Colombia - Monitoreo de Cultivos de Coca 2012. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2014). Colombia - Monitoreo de Cultivos de Coca 2013. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2015). Colombia - Monitoreo de Cultivos de Coca 2014. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2016). Colombia - Monitoreo de territorios afectados por Cultivos Ilícitos 2015. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2017). Colombia - Monitoreo de territorios afectados por Cultivos Ilícitos 2016. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2018). Colombia - Monitoreo de territorios afectados por Cultivos Ilícitos 2017. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2019). Colombia - Monitoreo de territorios afectados por Cultivos Ilícitos 2018. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2020). Colombia - Monitoreo de territorios afectados por Cultivos Ilícitos 2019. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2021). Colombia - Monitoreo de territorios afectados por Cultivos Ilícitos 2020. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (2022). Colombia - Monitoreo de territorios afectados por Cultivos Ilícitos 2021. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Oficina de Naciones Unidas contra la Droga y el Delito (UNODC). (s.f.). Colombia - Monitoreo de Cultivos de Coca 2010. Bogotá: Sistema de Monitoreo de Cultivos Ilícitos (SIMCI).</li>
+                    <li>Torres Guevara, L. E. (2000). Costos de la producción de coca a nivel campesino en la región del Caguán, Caquetá - Colombia. Un análisis comparativo. Cuadernos de Desarrollo Rural, 7-34.</li>
+                    <li>Unidad de Restitución de Tierras (URT). (2022). Lineamiento sobre inscripción en el RTDAF de solicitudes de restitución de predios con presencia de cultivos de uso ilícito. Bogotá: Dirección Social.</li>
+                </ul>
+            </section>
+            </div>
+        
+
+
+    <footer class="footer">
+        <p>&copy; 2025 Página de Inicio Coca. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../JS/datos_recolectados.js"></script>
+</body>
+</html>

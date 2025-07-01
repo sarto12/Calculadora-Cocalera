@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="../CSS/estilo_inicio.css">
+</head>
+<body>
+    <nav class="navbar">
+        
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="paguina_registro.html">Registro</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="paso_elaboracion.html">Paso de Elaboración</a></li>
+                <li><a href="tratamientos_medicinales.html">Tratamientos Medicinales</a></li>
+                <li><a href="productos_legales.html">Productos Derivados</a></li>
+                <li><a href="datos_recolectados.html">Datos Recolectados</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="editar_datos.html">Editar Datos</a></li>
+                <li><a href="Biesimci.html">Biesimci</a></li> 
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="main-content">
+        
+        <div class="left-content">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="../Images/noticia1.png" alt="Imagen 1">
+                    <div class="carousel-text">
+                        <a href="noticia_1.html">El presidente de Colombia quiere sustituir la coca por otros cultivos mediante compensaciones</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/noticia2.png" alt="Imagen 2">
+                    <div class="carousel-text">
+                        <a href="noticia_2.html">Petro vuelve a un viejo modelo de erradicación para hacerle frente a los cultivos de coca en el Catatumbo</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/noticia3.png" alt="Imagen 3">
+                    <div class="carousel-text">
+                        <a href="noticia_3.html">Colombia bate su récord de cultivos de coca por tercer año consecutivo, con 253.000 hectáreas en 2023</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/noticia4.png" alt="Imagen 4">
+                    <div class="carousel-text">
+                        <a href="noticia_4.html">La erradicación de cultivos ilícitos en Colombia alcanza su nivel más bajo en una década: el país en la mira de Donald Trump</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/noticia5.png" alt="Imagen 5">
+                    <div class="carousel-text">
+                        <a href="noticia_5.html">Cultivos de coca han aumentado exponencialmente en el país</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/noticia6.png" alt="Imagen 6">
+                    <div class="carousel-text">
+                        <a href="noticia_6.html">Resultados del monitoreo a cultivos de coca hecho en 2023 no son ajenos a presión global por aumento de la demanda</a>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button id="prev" class="carousel-btn">Anterior</button>
+                    <button id="next" class="carousel-btn">Siguiente</button>
+                </div>
+            </div>
+
+<div class="image-grid separate-grid">
+    <div class="image-item">
+        <img src="../Images/seleccionable1.png" alt="Imagen 1">
+        <div class="image-text">
+            <h3>Ingresar Ciudadano Solicitante</h3>
+            <p>Aquí podrás registrar ciudadanos solicitantes de tierras en restitución que hayan manifestado presencia de cultivos de coca en la tierra reclamada.</p>
+        </div>
+        <button class="image-btn" onclick="location.href='ingreso_de_datos.html'">NUEVO CIUDADANO</button>
+    </div>
+    <div class="image-item">
+        <img src="../Images/seleccionable2.png" alt="Imagen 2">
+        <div class="image-text">
+            <h3>Ingresar Datos de Cultivo</h3>
+            <p>Aquí podrás relacionar la información de un cultivo de coca con un ciudadano previamente creado en el sistema.</p>
+        </div>
+        <button class="image-btn" onclick="location.href='ingreso_de_datos.html'">RELACIONAR CULTIVO</button>
+    </div>
+    <div class="image-item">
+        <img src="../Images/seleccionable3.png" alt="Imagen 3">
+        <div class="image-text">
+            <h3>Editar Datos</h3>
+            <p>Aquí podrás editar o eliminar datos ingresados a la base de datos de ciudadanos solicitantes y cultivos.</p>
+        </div>
+        <button class="image-btn"onclick="location.href='editar_datos.html'">EDITAR DATOS</button>
+    </div>
+    <div class="image-item">
+        <img src="../Images/seleccionable4.png" alt="Imagen 4">
+        <div class="image-text">
+            <h3>Calcular Regalías</h3>
+            <p>Aquí podrás calcular las regalías de un cultivo según la información suministrada por el ciudadano reclamante.</p>
+        </div>
+        <button class="image-btn"onclick="location.href='calculadora.html'">CALCULAR GANANCIAS</button>
+    </div>
+</div>
+        </div>
+
+        
+<div class="right-content">
+    <img src="../Images/unodc.png" alt="UNODC Logo" class="info-logo">
+    <h2>Conoce los censos de cultivos de coca
+        en Colombia durante las últimas dos
+        décadas dando clic <a href="Biesimci.html">aquí</a></h2>
+    <div class="right-grid">
+       
+        <div class="right-item">
+            <img src="../Images/paso_de_elaboracion.png" alt="Monitoreo de Cultivos" class="right-image">
+            <div class="right-text">
+                <h3>Paso de Elaboración</h3>
+                <p>Conoce el proceso de elaboración de la hoja de Coca a Base / Pasta de Coca.</p>
+            </div>
+            <button class="right-btn" onclick="location.href='paso_elaboracion.html'">VER MÁS</button>
+        </div>            
+    
+        <div class="right-item">
+            <img src="../Images/medicina_2.png" alt="Políticas de Cultivos" class="right-image">
+            <div class="right-text">
+                <h3>Tratamiento Medicinales</h3>
+                <p>Conoce los tratamientos medinales con la hoja de coca.</p>
+            </div>
+            <button class="right-btn" onclick="location.href='tratamientos_medicinales.html'">VER MÁS</button>
+        </div>
+       
+        <div class="right-item">
+            <img src="../Images/productos_legales.png" alt="Políticas de Cultivos" class="right-image">
+            <div class="right-text">
+                <h3>Productos Derivados</h3>
+                <p>Descubre los productos legales y tradicionales elaborados a partir de la hoja de coca</p>
+            </div>
+            <button class="right-btn" onclick="location.href='productos_legales.html'">VER MÁS</button>
+        </div>
+    </div>
+
+
+    <div class="right-item" style="width: 90%; max-width: 1000px; margin: 0 auto;height: 180px;">
+        <div class="right-text">
+            <h3>Datos Recolectados</h3>
+            <p>Explora la información detallada sobre los datos recolectados relacionados con los cultivos de coca.</p>
+        </div>
+        <button class="right-btn" onclick="location.href='datos_recolectados.html'">VER MÁS</button>
+    </div>
+</div>
+
+  
+    <footer class="footer">
+        <h2>Acerca de Nosotros</h2>
+        <p>En nuestra plataforma, nos comprometemos a ofrecer un servicio
+            transparente y preciso para calcular las ganancias generadas por
+            cultivos de coca de campesinos que han sido desplazados y solicitan
+            la restitución de tierras. Reconocemos que estos agricultores han
+            vivido en un contexto complejo, donde la economía de subsistencia ha
+            estado vinculada a la siembra de cultivos ilícitos debido a la falta de
+            alternativas sostenibles. A través de nuestros cálculos, buscamos
+            proporcionar una evaluación justa de las ganancias obtenidas por
+            estos cultivos, como parte del proceso de indemnización y restitución
+            de derechos. Nuestro objetivo es apoyar la construcción de un futuro
+            más equitativo para los campesinos afectados, promoviendo la justicia
+            social y económica en el marco de la restitución de tierras, y
+            facilitando la transición hacia prácticas agrícolas legales y
+            sustentables.
+        </p>
+    </footer>
+
+    <script src="../js/funcio_inicio.js"></script>
+</body>
+</html>

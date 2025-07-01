@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+    <link rel="stylesheet" href="../CSS/estilo_crear_usuario.css">
+    <script defer src="../js/crear_usuario.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="paguina_registro.html">Registro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="paso_elaboracion.html">Paso de Elaboración</a></li>
+            <li><a href="tratamientos_medicinales.html">Tratamientos Medicinales</a></li>
+            <li><a href="productos_legales.html">Productos Derivados</a></li>
+            <li><a href="datos_recolectados.html">Datos Recolectados</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="editar_datos.html">Editar Datos</a></li>
+            <li><a href="Biesimci.html">Biesimci</a></li>
+        </ul>
+    </nav>
+    <div class="container" style="flex-direction: column; align-items: flex-start; max-width: 500px;">
+        <h1 style="font-size: 32px; font-weight: bold; margin-bottom: 30px;">Crear Usuario</h1>
+        <form id="formCrearUsuario" style="width:100%; display: flex; flex-direction: column; gap: 18px;">
+            <div class="inputbox tipo-doc">
+                <select id="tipo_documento" name="tipo_documento" required>
+                    <option value="" disabled selected>Tipo de Documento</option>
+                    <option value="C.C.">Cédula de Ciudadanía (C.C.)</option>
+                    <option value="T.I.">Tarjeta de Identidad (T.I.)</option>
+                    <option value="C.E.">Cédula de Extranjería (C.E.)</option>
+                </select>
+            </div>
+            <div class="inputbox">
+                <input type="text" name="numero_identificacion" required placeholder=" ">
+                <label>Número de Identificación</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" name="nombre" required placeholder=" ">
+                <label>Nombres y Apellidos</label>
+            </div>
+            <div class="inputbox">
+                <input type="email" name="correo" required placeholder=" ">
+                <label>Correo Institucional</label>
+            </div>
+            <div class="inputbox">
+                <input type="password" name="contrasena" required placeholder=" ">
+                <label>Contraseña</label>
+            </div>
+            <div class="inputboxselleccion">
+                <select id="cargo" name="cargo" required>
+                    <option value="" disabled selected>Selecciona el cargo</option>
+                    <option value="Administrador">Administrador</option>
+                    <option value="Abogado/profesional de atención al ciudadano">Abogado/profesional de atención al ciudadano</option>
+                    <option value="Analista de contexto/profesional social">Analista de contexto/profesional social</option>
+                </select>
+            </div>
+            <button type="submit">Crear Usuario</button>
+        </form>
+        <div id="mensaje" style="margin-top:18px;font-weight:bold;"></div>
+    </div>
+</body>
+</html>

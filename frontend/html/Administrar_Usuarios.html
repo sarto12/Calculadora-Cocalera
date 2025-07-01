@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Usuarios</title>
+    <link rel="stylesheet" href="../CSS/estilo_Gestion_de_regiones.css">
+    <script defer src="../js/listar_usuarios.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="paguina_registro.html">Registro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="paso_elaboracion.html">Paso de Elaboración</a></li>
+            <li><a href="tratamientos_medicinales.html">Tratamientos Medicinales</a></li>
+            <li><a href="productos_legales.html">Productos Derivados</a></li>
+            <li><a href="datos_recolectados.html">Datos Recolectados</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="editar_datos.html">Editar Datos</a></li>
+            <li><a href="Biesimci.html">Biesimci</a></li>
+        </ul>
+    </nav>
+    <div class="container" style="flex-direction: column; align-items: flex-start;">
+        <h1 style="font-size: 36px; font-weight: bold; margin-bottom: 30px;">Administrar Usuarios</h1>
+        <table style="width:100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            <thead style="background: #4CAF50; color: #fff;">
+                <tr>
+                    <th style="padding: 12px; border: 1px solid #ddd;">ID</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;">Nombre</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;">Correo</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;">Rol</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+<script>
+// Este script agrega el botón Editar junto al botón Eliminar en cada fila
+// Debes asegurarte de que en listar_usuarios.js también se maneje la lógica de edición
+// Aquí solo se muestra cómo agregar el botón en la tabla
+// Si ya tienes la lógica de renderizado en JS, solo agrega el botón en el renderizado de cada fila
+
+// Ejemplo de cómo debería verse en JS:
+// ...
+// accionesCell.innerHTML = `
+//   <button class="btn-editar" style="background:#2196F3;color:#fff;border:none;padding:6px 12px;margin-right:6px;border-radius:4px;cursor:pointer;">Editar</button>
+//   <button class="btn-eliminar" style="background:#f44336;color:#fff;border:none;padding:6px 12px;border-radius:4px;cursor:pointer;">Eliminar</button>
+// `;
+// ...
+
+// Si necesitas la función completa para listar_usuarios.js, pídela y te la genero.
+</script>

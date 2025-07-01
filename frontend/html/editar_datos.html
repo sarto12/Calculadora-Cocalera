@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Datos</title>
+    <link rel="stylesheet" href="../CSS/estilo_editar_datos.css">
+</head>
+<body>
+
+ 
+    <header class="header">
+        <div class="header-left">
+
+        </div>
+        <div class="header-right">
+            <ul class="header-links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="paguina_registro.html">Registro</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="paso_elaboracion.html">Paso de Elaboración</a></li>
+                <li><a href="tratamientos_medicinales.html">Tratamientos Medicinales</a></li>
+                <li><a href="productos_legales.html">Productos Derivados</a></li>
+                <li><a href="datos_recolectados.html">Datos Recolectados</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="editar_datos.html">Editar Datos</a></li>
+                <li><a href="Biesimci.html">Biesimci</a></li>
+            </ul>
+        </div>
+    </header>
+
+  
+    <div class="container">
+        <h1>Editar Datos del Usuario</h1>
+        <p>Actualiza la información personal registrada en la página.</p>
+
+        <form id="editar-datos-form" class="editar-datos-form">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Juan Pérez" required>
+            </div>
+
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ejemplo: juan.perez@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 3001234567" required>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ejemplo: Calle 123 #45-67" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contraseña">Nueva Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa una nueva contraseña">
+            </div>
+
+            <button type="submit" class="btn">Guardar Cambios</button>
+        </form>
+    </div>
+
+    
+    <footer class="footer">
+        <p>&copy; 2025 Página de Inicio Coca. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

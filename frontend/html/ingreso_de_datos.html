@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ingreso_de_datos.css">
+    <title>Ingreso de datos - Calculadora Cocalera</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-left">
+
+        </div>
+        <div class="header-right">
+            <ul class="header-links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="paguina_registro.html">Registro</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="paso_elaboracion.html">Paso de Elaboración</a></li>
+                <li><a href="tratamientos_medicinales.html">Tratamientos Medicinales</a></li>
+                <li><a href="productos_legales.html">Productos Derivados</a></li>
+                <li><a href="datos_recolectados.html">Datos Recolectados</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="editar_datos.html">Editar Datos</a></li>
+                <li><a href="Biesimci.html">Biesimci</a></li> 
+            </ul>
+        </div>
+    </header>
+
+   
+    <div class="main-content">
+        <h2>Formulario de Registro de Usuario y Datos de Cultivo</h2>
+        <form action="#" method="POST" class="user-form">
+            <div class="form-container">
+               
+                <div class="form-section">
+                    <h3>Datos del Usuario</h3>
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cedula">NÚMERO DE IDENTIFICACIÓN:</label>
+                        <input type="text" id="cedula" name="cedula" placeholder="Ingrese el número de identificación" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edad">EDAD:</label>
+                        <input type="number" id="edad" name="edad" placeholder="Ingrese la edad" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="familiares">DATOS FAMILIARES:</label>
+                        <input type="text" id="familiares" name="familiares" placeholder="Ingrese los datos familiares" required>
+                    </div>
+                </div>
+
+              
+                <div class="form-section">
+                    <h3>Datos del Cultivo</h3>
+                    <div class="form-group">
+                        <label for="region">Región:</label>
+                        <select id="region" name="region" required>
+                            <option value="">Seleccione la región</option>
+                            <option value="andina">Andina</option>
+                            <option value="amazonia">Amazonía</option>
+                            <option value="caribe">Caribe</option>
+                            <option value="orinoquia">Orinoquía</option>
+                            <option value="pacifica">Pacífica</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="municipio">Municipio:</label>
+                        <input type="text" id="municipio" name="municipio" placeholder="Ingrese el municipio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="extension">Extensión del Cultivo (en hectáreas):</label>
+                        <input type="number" id="extension" name="extension" placeholder="Ingrese la extensión del cultivo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ano_despojo">Año de Despojo:</label>
+                        <select id="ano_despojo" name="ano_despojo" required>
+                            <option value="">Seleccione el año</option>
+                            
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Registrar Usuario y Cultivo</button>
+        </form>
+    </div>
+    <script src="../JS/ingreso_de_datos.js"></script>
+</body>
+</html>

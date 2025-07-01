@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biesimci</title>
+    <link rel="stylesheet" href="../CSS/estilo_biesimci.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="paguina_registro.html">Registro</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="paso_elaboracion.html">Paso de Elaboración</a></li>
+                <li><a href="tratamientos_medicinales.html">Tratamientos Medicinales</a></li>
+                <li><a href="productos_legales.html">Productos Derivados</a></li>
+                <li><a href="datos_recolectados.html">Datos Recolectados</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="editar_datos.html">Editar Datos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   
+    <div class="container">
+       
+        <div class="left-panel">
+            <h3>Seleccione un Año</h3>
+            <ul class="year-list">
+                <li><button onclick="showPDFs(2024)">2024</button></li>
+                <li><button onclick="showPDFs(2023)">2023</button></li>
+                <li><button onclick="showPDFs(2022)">2022</button></li>
+                <li><button onclick="showPDFs(2021)">2021</button></li>
+                <li><button onclick="showPDFs(2020)">2020</button></li>
+                <li><button onclick="showPDFs(2019)">2019</button></li>
+                <li><button onclick="showPDFs(2018)">2018</button></li>
+                <li><button onclick="showPDFs(2017)">2017</button></li>
+                <li><button onclick="showPDFs(2016)">2016</button></li>
+                <li><button onclick="showPDFs(2015)">2015</button></li>
+                <li><button onclick="showPDFs(2014)">2014</button></li>
+                <li><button onclick="showPDFs(2013)">2013</button></li>
+                <li><button onclick="showPDFs(2012)">2012</button></li>
+                <li><button onclick="showPDFs(2011)">2011</button></li>
+                <li><button onclick="showPDFs(2010)">2010</button></li>
+                <li><button onclick="showPDFs(2009)">2009</button></li>
+                <li><button onclick="showPDFs(2008)">2008</button></li>
+                <li><button onclick="showPDFs(2007)">2007</button></li>
+                <li><button onclick="showPDFs(2006)">2006</button></li>
+                <li><button onclick="showPDFs(2005)">2005</button></li>
+                <li><button onclick="showPDFs(2004)">2004</button></li>
+                <li><button onclick="showPDFs(2003)">2003</button></li>
+                <li><button onclick="showPDFs(2002)">2002</button></li>
+            </ul>
+        </div>
+
+        
+        <div class="right-panel">
+            <h3>Documentos PDF Correspondientes al año seleccionado</h3>
+            <div id="pdf-container">
+                <p>Seleccione un año para ver los documentos.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/biesimci.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+</body>
+</html>

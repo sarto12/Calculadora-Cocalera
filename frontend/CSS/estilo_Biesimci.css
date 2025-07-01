@@ -1,0 +1,311 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    justify-content: center; 
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d4f1d4;
+}
+.navbar {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    justify-content: center; 
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d4f1d4;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap; 
+}
+
+.news-content {
+    flex: 3;
+    padding: 20px;
+}
+
+.news-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.sidebar .ad {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar .ad img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.nav-links {
+    margin-top: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 80px 20px 20px; 
+}
+
+
+.left-panel {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    height: calc(100vh - 80px); 
+}
+
+.left-panel h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.year-list {
+    list-style: none;
+    padding: 0;
+}
+
+.year-list li {
+    margin-bottom: 10px;
+}
+
+.year-list button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.year-list button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05); 
+}
+
+
+.right-panel {
+    flex: 2;
+    padding: 20px;
+    overflow-y: auto;
+    height: calc(100vh - 80px); 
+}
+
+.right-panel h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+#pdf-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+#pdf-container a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+#pdf-container a:hover {
+    text-decoration: underline;
+    color: #0056b3; 
+}
+
+
+.pdf-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pdf-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.pdf-canvas {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+#pdf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    min-height: 300px;
+}
+
+.pdf-miniatura-canvas {
+    width: 220px !important;
+    height: auto !important;
+    max-width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .left-panel {
+        border-right: none; 
+        border-bottom: 1px solid #ddd; 
+        height: auto; 
+    }
+
+    .right-panel {
+        height: auto; 
+    }
+
+    .pdf-wrapper {
+        width: 100%; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .year-list button {
+        font-size: 12px; 
+        padding: 8px; 
+    }
+}
