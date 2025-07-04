@@ -30,63 +30,52 @@
             <form style="display: flex; flex-wrap: wrap; gap: 40px;">
                 <div style="display: flex; flex-direction: column; gap: 20px; min-width: 300px;">
                     <label>DEPARTAMENTO
-                        <select>
-                            <option>Seleccionar</option>
-                            <option>Amazonas</option>
-                            <option>Antioquia</option>
-                            <option>Arauca</option> 
-                            <option>Atlántico</option>
-                            <option>Bolívar</option>
-                            <option>Boyacá</option>
-                            <option>Caldas</option>
-                            <option>Caquetá</option>
-                            <option>Casanare</option>
-                            <option>Cauca</option>
-                            <option>Cesar</option>
-                            <option>Chocó</option>
-                            <option>Córdoba</option>
-                            <option>Cundinamarca</option>
-                            <option>Guainía</option>
-                            <option>Guaviare</option>
-                            <option>Huila</option>
-                            <option>La Guajira</option>
-                            <option>Magdalena</option>
-                            <option>Meta</option>
-                            <option>Nariño</option>
-                            <option>Norte de Santander</option>
-                            <option>Putumayo</option>
-                            <option>Quindío</option>
-                            <option>Risaralda</option>
-                            <option>San Andrés y Providencia</option>
-                            <option>Santander</option>
-                            <option>Sucre</option>
-                            <option>Tolima</option>
-                            <option>Valle del Cauca</option>
-                            <option>Vaupés</option>
-                            <option>Vichada</option>
+                        <select id="departamento-select">
+                            <option value="">Seleccionar</option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Antioquia">Antioquia</option>
+                            <option value="Arauca">Arauca</option>
+                            <option value="Atlántico">Atlántico</option>
+                            <option value="Bolívar">Bolívar</option>
+                            <option value="Boyacá">Boyacá</option>
+                            <option value="Caldas">Caldas</option>
+                            <option value="Caquetá">Caquetá</option>
+                            <option value="Casanare">Casanare</option>
+                            <option value="Cauca">Cauca</option>
+                            <option value="Cesar">Cesar</option>
+                            <option value="Chocó">Chocó</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Cundinamarca">Cundinamarca</option>
+                            <option value="Guainía">Guainía</option>
+                            <option value="Guaviare">Guaviare</option>
+                            <option value="Huila">Huila</option>
+                            <option value="La Guajira">La Guajira</option>
+                            <option value="Magdalena">Magdalena</option>
+                            <option value="Meta">Meta</option>
+                            <option value="Nariño">Nariño</option>
+                            <option value="Norte de Santander">Norte de Santander</option>
+                            <option value="Putumayo">Putumayo</option>
+                            <option value="Quindío">Quindío</option>
+                            <option value="Risaralda">Risaralda</option>
+                            <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                            <option value="Santander">Santander</option>
+                            <option value="Sucre">Sucre</option>
+                            <option value="Tolima">Tolima</option>
+                            <option value="Valle del Cauca">Valle del Cauca</option>
+                            <option value="Vaupés">Vaupés</option>
+                            <option value="Vichada">Vichada</option>
                         </select>
                     </label>
                     <label>MUNICIPIO
-                        <select>
-                            <option>Seleccionar</option>
-                            <option>El Encanto</option>
-                            <option>La Chorrera</option>
-                            <option>La Victoria</option>
-                            <option>Leticia</option>
-                            <option>Miriti - Parana</option>
-                            <option>Puerto Alegria</option>
-                            <option>Puerto Arica</option>
-                            <option>Puerto Nariño</option>
-                            <option>Puerto Santarder</option>
-                            <option>Tarapaca</option>
-
+                        <select id="municipio-select">
+                            <option value="">Seleccionar</option>
                         </select>
                     </label>
-                    <label>PUEBLO
-                        <select><option>Seleccionar</option></select>
+                    <label for="pueblo-input">PUEBLO
+                        <input type="text" id="pueblo-input" name="pueblo" placeholder="Escribe el nombre del pueblo">
                     </label>
-                    <label>VEREDA
-                        <select><option>Seleccionar</option></select>
+                    <label for="vereda-input">VEREDA
+                        <input type="text" id="vereda-input" name="vereda" placeholder="Escribe el nombre de la vereda">
                     </label>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 20px; min-width: 300px;">
@@ -100,13 +89,15 @@
                     <label>AÑO
                         <select><option>Seleccionar</option></select>
                     </label>
-                    <label>Dirrecion o Nombre de la Finca </label>
-                    <input type="text" id="text" name="text" placeholder="" required>
+                    <label for="Dirrecion-input">Dirrecion o Nombre de la Finca
+                        <input type="text" id="Dirrecion-input" name="Dirrecion" placeholder="Escribe el nombre de la dirrecion">
+                    </label>
                     
                 </div>
             </form>
             <button style="margin-top: 30px; background: #4CAF50; color: #fff; border: none; padding: 14px 32px; font-size: 18px; font-weight: bold; border-radius: 4px; cursor: pointer;">GUARDAR CAMBIOS</button>
         </div>
     </div>
+    <script src="../js/departamentos_municipios.js"></script>
 </body>
 </html>
