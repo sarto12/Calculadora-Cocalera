@@ -1,4 +1,4 @@
-// frontend/js/departamentos_municipios.js
+
 
 const municipiosPorDepartamento = {
     'Amazonas': [

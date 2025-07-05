@@ -1,0 +1,192 @@
+/* Etiqueta visual para la región seleccionada en el mapa */
+.region-label {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2196f3;
+    background: rgba(255,255,255,0.85);
+    border-radius: 8px;
+    padding: 8px 0 6px 0;
+    z-index: 2;
+    pointer-events: none;
+    letter-spacing: 1px;
+    display: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #333;
+}
+
+
+.header {
+    background-color: #4CAF50; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.header-logo {
+    height: 40px;
+    width: auto; 
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-links {
+    list-style: none;
+    display: flex;
+    gap: 15px; 
+    margin: 0;
+    padding: 0;
+}
+
+.header-links a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 16px;
+    transition: color 0.3s ease; 
+}
+
+.header-links a:hover {
+    color: #d4f1d4; 
+}
+
+.solicitud-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            margin: 40px auto 0 auto;
+            max-width: 1300px;
+            min-height: 70vh;
+        }
+        .solicitud-form-block {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        .solicitud-section {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .solicitud-section h2 {
+            font-size: 2.1rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+        .solicitud-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+        }
+        .solicitud-input, .solicitud-select {
+            width: 320px;
+            padding: 12px 14px;
+            border: 1.5px solid #bdbdbd;
+            border-radius: 6px;
+            font-size: 16px;
+            background: #f5fff7;
+            margin-bottom: 10px;
+            transition: border 0.2s, box-shadow 0.2s;
+        }
+        .solicitud-input:focus, .solicitud-select:focus {
+            border: 2px solid #4CAF50;
+            box-shadow: 0 0 0 2px #c8e6c9;
+            background: #fff;
+        }
+        .solicitud-map {
+            width: 350px;
+            height: 350px;
+            background: #e0f2e9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .solicitud-btn {
+            width: 100%;
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 16px 0;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            letter-spacing: 1px;
+            transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+        }
+        .solicitud-btn:hover {
+            background: #1769aa;
+            box-shadow: 0 4px 16px rgba(33,150,243,0.18);
+            transform: translateY(-2px) scale(1.03);
+        }
+        @media (max-width: 1100px) {
+            .solicitud-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .solicitud-map {
+                width: 100%;
+                height: 220px;
+            }
+        }

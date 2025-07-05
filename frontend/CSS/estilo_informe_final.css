@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+.navbar {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    z-index: 1000;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.nav-links li {
+    display: inline;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #333;
+}
+.informe-container {
+    max-width: 1100px;
+    margin: 60px auto 0 auto;
+    padding: 0 30px 40px 30px;
+}
+.informe-titulo {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    margin-top: 40px;
+}
+.informe-desc {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    color: #222;
+    max-width: 900px;
+}
+.informe-content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.informe-info {
+    flex: 1 1 0;
+    min-width: 320px;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.informe-barra {
+    height: 16px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.barra-azul {
+    background: #2196f3;
+    width: 100%;
+}
+.barra-verde {
+    background: #b2dfdb;
+    width: 95%;
+}
+.barra-verde.corto {
+    width: 60%;
+}
+.barra-azul.mediana {
+    width: 45%;
+}
+.barra-verde.corta {
+    width: 35%;
+}
+.informe-puntos {
+    font-size: 2rem;
+    letter-spacing: 8px;
+    margin: 10px 0 10px 0;
+}
+.informe-ubicaciones {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.informe-ubicacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.icon-ubicacion {
+    font-size: 1.3rem;
+    margin-right: 4px;
+}
+.barra-verde.ubicacion {
+    width: 60%;
+    height: 12px;
+    margin-bottom: 0;
+}
+.barra-verde.ubicacion-corta {
+    width: 35%;
+    height: 12px;
+    margin-bottom: 0;
+}
+.informe-mapa {
+    width: 350px;
+    height: 300px;
+    background: #e0f2e9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.informe-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.informe-btn {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 18px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+.informe-btn:hover {
+    background: #1769aa;
+    box-shadow: 0 4px 16px rgba(33,150,243,0.18);
+    transform: translateY(-2px) scale(1.03);
+}
+@media (max-width: 900px) {
+    .informe-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .informe-mapa {
+        width: 100%;
+        height: 220px;
+    }
+}

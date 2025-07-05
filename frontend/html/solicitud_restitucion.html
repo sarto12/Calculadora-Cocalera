@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Restitución de Tierras</title>
+    <link rel="stylesheet" href="../CSS/estilo_solicitud_restitucion.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="paguina_registro.html">Registro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="paso_elaboracion.html">Paso de Elaboración</a></li>
+            <li><a href="tratamientos_medicinales.html">Tratamientos Medicinales</a></li>
+            <li><a href="productos_legales.html">Productos Derivados</a></li>
+            <li><a href="datos_recolectados.html">Datos Recolectados</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="editar_datos.html">Editar Datos</a></li>
+            <li><a href="Biesimci.html">Biesimci</a></li>
+        </ul>
+    </nav>
+    <div class="solicitud-container">
+        <div class="solicitud-form-block">
+            <h1 style="font-size:2.7rem; font-weight:bold; margin-bottom:18px; line-height:1.1;">Solicitud de Restitución de Tierras<br>con Presencia de Cultivo de Coca</h1>
+            <div style="display:flex; gap:60px;">
+                <div class="solicitud-section">
+                    <h2>Datos Solicitante</h2>
+                    <label class="solicitud-label" for="nombre">NOMBRES Y APELLIDOS</label>
+                    <input class="solicitud-input" type="text" id="nombre" name="nombre" autocomplete="off">
+                    <label class="solicitud-label" for="identificacion">NÚMERO DE IDENTIFICACIÓN</label>
+                    <input class="solicitud-input" type="text" id="identificacion" name="identificacion" autocomplete="off">
+                    <label class="solicitud-label" for="edad">EDAD</label>
+                    <input class="solicitud-input" type="number" id="edad" name="edad" min="0" autocomplete="off">
+                    <label class="solicitud-label" for="familiares">DATOS FAMILIARES</label>
+                    <input class="solicitud-input" type="text" id="familiares" name="familiares" autocomplete="off">
+                </div>
+                <div class="solicitud-section">
+                    <h2>Datos de Cultivo</h2>
+                    <label class="solicitud-label" for="region">REGIÓN</label>
+                    <select class="solicitud-select" id="region" name="region">
+                        <option>Seleccionar</option>
+                        <option value="andina">Región Andina</option>
+                        <option value="caribe">Región Caribe</option>
+                        <option value="pacifica">Región Pacífica</option>
+                        <option value="orinoquia">Región Orinoquía</option>
+                        <option value="amazonica">Región Amazónica</option>
+                        <option value="insular">Región Insular</option>
+                    </select>
+                    <label class="solicitud-label" for="municipio">MUNICIPIO</label>
+                    <select class="solicitud-select" id="municipio" name="municipio">
+                        <option>Seleccionar</option>
+                    </select>
+                    <label class="solicitud-label" for="extension">EXTENSIÓN DE CULTIVO</label>
+                    <select class="solicitud-select" id="extension" name="extension">
+                        <option>Seleccionar</option>
+                        <option value="0-1 ha">0-1 ha</option>
+                        <option value="1-5 ha">1-5 ha</option>
+                        <option value=">5 ha">Más de 5 ha</option>
+                    </select>
+                    <label class="solicitud-label" for="anio">AÑO DE DESPOJO</label>
+                    <select class="solicitud-select" id="anio" name="anio">
+                        <option>Seleccionar</option>
+                         <option>2025</option>
+                            <option>2024</option>
+                            <option>2023</option>
+                            <option>2022</option>
+                            <option>2021</option>   
+                            <option>2020</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                            <option>2017</option>
+                            <option>2016</option>
+                            <option>2015</option>
+                            <option>2014</option>
+                            <option>2013</option>
+                            <option>2012</option>
+                            <option>2011</option>
+                            <option>2010</option>
+                            <option>2009</option>
+                            <option>2008</option>
+                            <option>2007</option>
+                            <option>2006</option>
+                            <option>2005</option>
+                            <option>2004</option>
+                            <option>2003</option>
+                            <option>2002</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+            <div class="solicitud-map" style="position:relative; width:350px; height:350px;">
+                <img src="../images/solicitud.png" alt="Región seleccionada" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+            </div>
+            <button class="solicitud-btn">GUARDAR DATOS</button>
+        </div>
+    </div>   
+</body>
+</html>
