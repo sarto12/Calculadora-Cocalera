@@ -30,13 +30,21 @@
             <form style="display: flex; flex-wrap: wrap; gap: 40px;">
                 <div style="display: flex; flex-direction: column; gap: 20px; min-width: 300px;">
                     <label>REGIÓN
-                        <select><option>Seleccionar</option></select>
+                        <select id="region-select">
+                            <option value="">Seleccionar</option>
+                            <option value="andina">Región Andina</option>
+                            <option value="caribe">Región Caribe</option>
+                            <option value="pacifica">Región Pacífica</option> 
+                            <option value="orinoquia">Región Orinoquía</option>
+                            <option value="amazonia">Región Amazonía</option>
+                            <option value="insular">Región Insular</option>
+                        </select>
                     </label>
                     <label>DEPARTAMENTO
-                        <select><option>Seleccionar</option></select>
+                        <select id="departamento-select"><option value="">Seleccionar</option></select>
                     </label>
                     <label>MUNICIPIO
-                        <select><option>Seleccionar</option></select>
+                        <select id="municipio-select"><option value="">Seleccionar</option></select>
                     </label>
                     <label>PUEBLO
                         <select><option>Seleccionar</option></select>
@@ -66,5 +74,6 @@
             <button style="margin-top: 30px; background: #4CAF50; color: #fff; border: none; padding: 14px 32px; font-size: 18px; font-weight: bold; border-radius: 4px; cursor: pointer;">GUARDAR CAMBIOS</button>
         </div>
     </div>
-</body>
+  <script defer src="../js/regiones_depatamentos_municios.js"></script>
+  </body>
 </html>
