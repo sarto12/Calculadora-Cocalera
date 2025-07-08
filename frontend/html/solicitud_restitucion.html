@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Solicitud de Restitución</title>
     <link rel="stylesheet" href="../CSS/estilo_solicitud_restitucion.css">
+
 </head>
 <body>
     <nav class="navbar">
@@ -25,6 +26,7 @@
     <div class="solicitud-container">
         <div class="solicitud-form-block">
             <h1 style="font-size:2.7rem; font-weight:bold; margin-bottom:18px; line-height:1.1;">Formulario de Solicitud de Restitución</h1>
+            <form id="formularioSolicitud" onsubmit="enviarFormulario(event)">
             <div style="display: flex; gap: 60px;">
 
                 <!-- SECCIÓN: DATOS DEL SOLICITANTE -->
@@ -142,8 +144,10 @@
             <div class="solicitud-map" style="position:relative; width:350px; height:350px;">
                 <img src="../images/solicitud.png" alt="Región seleccionada" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
             </div>
-            <button class="solicitud-btn">GUARDAR DATOS</button>
+            <button type="submit" class="solicitud-btn">GUARDAR DATOS</button>
         </div>
-    </div>   
+        </form>
+    </div>
+    <script src="../js/formulario.js"></script>   
 </body>
 </html>
