@@ -2,26 +2,26 @@ async function enviarFormulario(event) {
     event.preventDefault(); // evitar que recargue la página
 
     const datos = {
-        nombre: document.getElementById('nombre').value,
+        nombre_completo: document.getElementById('nombres').value,
         identificacion: document.getElementById('identificacion').value,
         edad: document.getElementById('edad').value,
         genero: document.getElementById('genero').value,
-        etnia: document.getElementById('etnia').value,
+        pertenencia_etnica: document.getElementById('pertenencia_etnica').value,
         nivel_educativo: document.getElementById('nivel_educativo').value,
         telefono: document.getElementById('telefono').value,
         correo: document.getElementById('correo').value,
-        familiares: document.getElementById('familiares').value,
+        datos_familiares: document.getElementById('datos_familiares').value,
         region: document.getElementById('region').value,
         departamento: document.getElementById('departamento').value,
         municipio: document.getElementById('municipio').value,
         vereda: document.getElementById('vereda').value,
-        extension: document.getElementById('extension').value,
-        transformacion: document.getElementById('transformacion').value,
-        anio: document.getElementById('anio').value
+        extension_ha: document.getElementById('extension_ha').value,
+        tipo_transformacion: document.getElementById('tipo_transformacion').value,
+        anio_despojo: document.getElementById('anio_despojo').value
     };
 
     try {
-        const respuesta = await fetch('http://localhost:3000/api/registrar', {
+        const respuesta = await fetch('http://localhost:3000/api/registro/formulario', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
