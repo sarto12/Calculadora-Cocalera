@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Solicitud de Restitución</title>
     <link rel="stylesheet" href="../CSS/estilo_solicitud_restitucion.css">
+
 </head>
 <body>
     <nav class="navbar">
@@ -25,14 +26,15 @@
     <div class="solicitud-container">
         <div class="solicitud-form-block">
             <h1 style="font-size:2.7rem; font-weight:bold; margin-bottom:18px; line-height:1.1;">Formulario de Solicitud de Restitución</h1>
+            <form id="formularioSolicitud" onsubmit="enviarFormulario(event)">
             <div style="display: flex; gap: 60px;">
 
                 <!-- SECCIÓN: DATOS DEL SOLICITANTE -->
                 <div class="solicitud-section">
                     <h2>Datos del Solicitante</h2>
                     
-                    <label class="solicitud-label" for="nombre">Nombres y Apellidos:</label>
-                    <input class="solicitud-input" type="text" id="nombre" name="nombre">
+                    <label class="solicitud-label" for="nombres">Nombres y Apellidos:</label>
+                    <input class="solicitud-input" type="text" id="nombres" name="nombres">
 
                     <label class="solicitud-label" for="identificacion">Número de Identificación:</label>
                     <input class="solicitud-input" type="text" id="identificacion" name="identificacion">
@@ -47,8 +49,8 @@
                         <option value="masculino">Masculino</option>
                     </select>
 
-                    <label class="solicitud-label" for="etnia">Pertenencia Étnica:</label>
-                    <select class="solicitud-select" id="etnia" name="etnia">
+                    <label class="solicitud-label" for="petenencia_etnica">Pertenencia Étnica:</label>
+                    <select class="solicitud-select" id="pertenencia_etnica" name="pertenencia_etnica">
                         <option value="">Seleccionar</option>
                         <option value="sin">Sin pertenencia étnica</option>
                         <option value="indigena">Indígena</option>
@@ -65,8 +67,8 @@
                     <label class="solicitud-label" for="correo">Correo Electrónico:</label>
                     <input class="solicitud-input" type="email" id="correo" name="correo" />
 
-                    <label class="solicitud-label" for="familiares">Composición Familiar (nombres, edades, parentesco):</label>
-                    <textarea class="solicitud-input" id="familiares" name="familiares" rows="3"></textarea>
+                    <label class="solicitud-label" for="datos_familiares">Composición Familiar (nombres, edades, parentesco):</label>
+                    <textarea class="solicitud-input" id="datos_familiares" name="datos_familiares" rows="3"></textarea>
 
                 </div>
 
@@ -94,11 +96,11 @@
                     <label class="solicitud-label" for="vereda">Vereda:</label>
                     <input class="solicitud-input" type="text" id="vereda" name="vereda">
 
-                    <label class="solicitud-label" for="extension">Extensión del Cultivo (hectáreas):</label>
-                    <input class="solicitud-input" type="text" id="extension" name="extension">
+                    <label class="solicitud-label" for="extension_ha">Extensión del Cultivo (hectáreas):</label>
+                    <input class="solicitud-input" type="text" id="extension_ha" name="extension_ha">
 
-                    <label class="solicitud-label" for="transformacion">Tipo de Transformación:</label>
-                    <select class="solicitud-select" id="transformacion" name="transformacion">
+                    <label class="solicitud-label" for="tipo_transformacion">Tipo de Transformación:</label>
+                    <select class="solicitud-select" id="tipo_transformacion" name="tipo_transformacion">
                         <option value="">Seleccionar</option>
                         <option value="ninguna">Ninguna</option>
                         <option value="hoja">Venta de hoja</option>
@@ -106,8 +108,8 @@
                         <option value="base">Base de coca</option>
                     </select>
 
-                    <label class="solicitud-label" for="anio">Año de Despojo:</label>
-                    <select class="solicitud-select" id="anio" name="anio">
+                    <label class="solicitud-label" for="anio_despojo">Año de Despojo:</label>
+                    <select class="solicitud-select" id="anio_despojo" name="anio_despojo">
                             <option>Seleccionar</option>
                             <option>2025</option>
                             <option>2024</option>
@@ -142,8 +144,10 @@
             <div class="solicitud-map" style="position:relative; width:350px; height:350px;">
                 <img src="../images/solicitud.png" alt="Región seleccionada" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
             </div>
-            <button class="solicitud-btn">GUARDAR DATOS</button>
+            <button type="submit" class="solicitud-btn">GUARDAR DATOS</button>
         </div>
-    </div>   
+        </form>
+    </div>
+    <script src="../js/formulario.js">defer</script>   
 </body>
 </html>
